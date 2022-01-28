@@ -17848,7 +17848,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var forms = function forms() {
   var form = document.querySelectorAll('form'),
-      inputs = document.querySelectorAll('input');
+      inputs = document.querySelectorAll('input'),
+      phoneInputs = document.querySelectorAll('input[name="user_phone"]'); // phoneInputs.forEach(item => {
+  //     item.addEventListener('input', () => {
+  //          item.value = item.value.replace(/\D/, '')
+  //     });
+  // });
+
   var message = {
     loading: 'Загрузка',
     success: 'Спасибо, скоро мы с вами свзяжемся',
